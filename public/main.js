@@ -11,6 +11,9 @@
 		audio.play();
 	}
 
+	$('audio').click(function() {
+		socket.emit("start", false)
+	})
 
 	//$('audio').(function(){
     //  socket.emit('chat message', $('#m').val());
